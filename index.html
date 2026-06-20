@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Priyankan Biswas — CS Researcher</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@300;400;500;600&family=Fraunces:ital,wght@0,300;0,700;1,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="nav">
+    <span class="nav-logo">PB</span>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="burger" id="burger" aria-label="Open menu">&#9776;</button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="close-btn" id="closeMenu">&#10005;</button>
+    <ul>
+      <li><a href="#about" class="mm-link">About</a></li>
+      <li><a href="#research" class="mm-link">Research</a></li>
+      <li><a href="#projects" class="mm-link">Projects</a></li>
+      <li><a href="#skills" class="mm-link">Skills</a></li>
+      <li><a href="#contact" class="mm-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-inner">
+      <div class="hero-content">
+        <p class="hero-eyebrow">B.Sc. Computer Science · BRACU</p>
+        <h1 class="hero-name">Priyankan<br /><em>Biswas</em></h1>
+        <p class="hero-sub">
+          Researching parameter-efficient fine-tuning for large-scale transformers.<br />
+          Interested in NLP, image processing, and bioinformatics.
+        </p>
+        <div class="hero-cta">
+          <a href="#research" class="btn-primary">View Research</a>
+          <a href="#projects" class="btn-outline">See Projects</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-num">3.99</span>
+            <span class="stat-label">CGPA / 4.00</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num">9+</span>
+            <span class="stat-label">Projects</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num">2022</span>
+            <span class="stat-label">Started at BRACU</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-photo-wrap">
+        <img src="priyankan.jpg" alt="Priyankan Biswas" class="hero-photo" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag">About</span>
+        <h2>A NLP and AI / ML Enthusiast</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I'm a Computer Science undergraduate at BRAC University, Dhaka, maintaining a near-perfect CGPA of 3.99. My work involves <strong>machine learning, AI, NLP research</strong> along with software engineering.
+          </p>
+          <p>
+            Currently, I'm conducting research on low-rank adaptation and prioritization strategies for large-scale transformers, with a focus on efficient task-specific layer utilization.
+          </p>
+          <p>
+            Outside research, I worked as a student tutor in Mathematics and Natural Sciences and CSE dept. at BRAC University.
+          </p>
+        </div>
+        <div class="about-side">
+          <div class="info-card">
+            <div class="info-row">
+              <span class="info-icon">📍</span>
+              <div>
+                <span class="info-key">Location</span>
+                <span class="info-val">Dhaka, Bangladesh</span>
+              </div>
+            </div>
+            <div class="info-row">
+              <span class="info-icon">🎓</span>
+              <div>
+                <span class="info-key">Institution</span>
+                <span class="info-val">BRAC University</span>
+              </div>
+            </div>
+            <div class="info-row">
+              <span class="info-icon">🔬</span>
+              <div>
+                <span class="info-key">Focus</span>
+                <span class="info-val">NLP · ML · Bioinformatics</span>
+              </div>
+            </div>
+            <div class="info-row">
+              <span class="info-icon">📧</span>
+              <div>
+                <span class="info-key">Email</span>
+                <span class="info-val">biswasborno13@gmail.com</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESEARCH -->
+  <section class="section section-dark" id="research">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag tag-light">Research</span>
+        <h2>Ongoing Work</h2>
+      </div>
+      <div class="research-card">
+        <div class="research-badge">Active</div>
+        <h3 class="research-title">Prioritization and Low-Rank Adaptation for Improved Task-Specific Layer Utilization in Large-Scale Transformers</h3>
+        <p class="research-desc">
+          Exploring how transformer layers can be selectively fine-tuned using low-rank decomposition methods (LoRA variants) with learned prioritization signals, enabling more efficient task adaptation without full parameter updates.
+        </p>
+        <div class="research-tags">
+          <span class="rtag">PEFT</span>
+          <span class="rtag">LoRA</span>
+          <span class="rtag">Transformers</span>
+          <span class="rtag">NLP</span>
+          <span class="rtag">Fine-Tuning</span>
+        </div>
+        <div class="research-img-wrap">
+          <img src="rank_heatmap.png" alt="Layer-wise Rank Allocation per Task (Best Trial) — heatmap across GLUE tasks and Electra-base transformer layers" class="research-img" />
+          <p class="research-img-caption">Layer-wise rank allocation per GLUE task across Electra-base transformer layers (L1–L12)</p>
+        </div>
+      </div>
+
+      <div class="interests-grid">
+        <div class="interest-box">
+          <span class="interest-icon">💬</span>
+          <h4>Natural Language Processing</h4>
+          <p>Language model fine-tuning, text classification, sequence labeling, and efficient adaptation strategies.</p>
+        </div>
+        <div class="interest-box">
+          <span class="interest-icon">🖼️</span>
+          <h4>Image Processing</h4>
+          <p>Audio and spectrogram fusion, molecular graph generation, and visual feature extraction pipelines.</p>
+        </div>
+        <div class="interest-box">
+          <span class="interest-icon">🧬</span>
+          <h4>Bioinformatics</h4>
+          <p>Computational methods for biological data, including graph-based approaches for molecular structures.</p>
+        </div>
+        <div class="interest-box">
+          <span class="interest-icon">⚙️</span>
+          <h4>Machine Learning</h4>
+          <p>Supervised and unsupervised methods, generative models, and comparative benchmark studies.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag">Projects</span>
+        <h2>Things I've built.</h2>
+      </div>
+
+      <!-- Filter -->
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="ml">ML / AI</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+        <button class="filter-btn" data-filter="graphics">Graphics</button>
+        <button class="filter-btn" data-filter="data">Data</button>
+      </div>
+
+      <div class="projects-grid" id="projectsGrid">
+
+        <div class="proj-card" data-cat="ml">
+          <div class="proj-meta">
+            <span class="proj-type">NLP · ML</span>
+          </div>
+          <h3>RNN Variants for POS Tagging</h3>
+          <p>Comparative analysis of RNN, LSTM, and GRU architectures for Part-of-Speech tagging tasks.</p>
+          <div class="proj-stack">
+            <span>Python</span><span>TensorFlow</span>
+          </div>
+          <a class="proj-link" href="https://github.com/biswas1377/POS-Tagging-RNN" target="_blank">GitHub →</a>
+        </div>
+
+        <div class="proj-card" data-cat="ml">
+          <div class="proj-meta">
+            <span class="proj-type">Generative AI</span>
+          </div>
+          <h3>Molecular Graph Generation</h3>
+          <p>Comparative study of WGAN-GP, CoDNet, and Graph VAE for generating valid molecular graphs.</p>
+          <img src="molecular_sample.png" alt="Sample molecular graph outputs" class="proj-img" />
+          <div class="proj-stack">
+            <span>Python</span><span>Keras</span><span>TensorFlow</span>
+          </div>
+          <a class="proj-link" href="https://github.com/biswas1377/Comparative-Analysis-of-Molecular-Graph-Generation-Methods" target="_blank">GitHub →</a>
+        </div>
+
+        <div class="proj-card" data-cat="ml">
+          <div class="proj-meta">
+            <span class="proj-type">Audio · ML</span>
+          </div>
+          <h3>Audio Feature Fusion for Classification</h3>
+          <p>Fusing raw audio signals with spectrogram representations to improve sound classification accuracy.</p>
+          <div class="proj-stack">
+            <span>Python</span><span>PyTorch</span>
+          </div>
+          <a class="proj-link" href="https://github.com/biswas1377/Feature-Fusion-Using-Raw-Signal-and-Spectrogram" target="_blank">GitHub →</a>
+        </div>
+
+        <div class="proj-card" data-cat="data ml">
+          <div class="proj-meta">
+            <span class="proj-type">Sports Analytics</span>
+          </div>
+          <h3>Pitch Condition Classification in T20 Cricket</h3>
+          <p>Supervised vs. unsupervised learning comparison for classifying pitch conditions from match data.</p>
+          <div class="proj-stack">
+            <span>Python</span><span>Scikit-learn</span>
+          </div>
+          <a class="proj-link" href="https://github.com/biswas1377/Pitch-Condition-Classification-in-T20-Cricket" target="_blank">GitHub →</a>
+        </div>
+
+        <div class="proj-card proj-card-wide" data-cat="web">
+          <div class="proj-meta">
+            <span class="proj-type">Full Stack · Web</span>
+          </div>
+          <h3>Player Radar</h3>
+          <p>Web application for football scouting and player evaluation designed for football academies.</p>
+          <div class="video-embed">
+            <iframe src="https://www.youtube.com/embed/rw00Bnsucx8" title="Player Radar Demo"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="proj-stack">
+            <span>MongoDB</span><span>Express</span><span>React</span><span>Node.js</span>
+          </div>
+          <a class="proj-link" href="https://github.com/biswas1377/player_radar" target="_blank">GitHub →</a>
+        </div>
+
+        <div class="proj-card" data-cat="web data">
+          <div class="proj-meta">
+            <span class="proj-type">Backend · Database</span>
+          </div>
+          <h3>BRACU Ride-Sharing System</h3>
+          <p>A database-driven ride-sharing platform built for BRAC University students with PHP and MySQL.</p>
+          <div class="proj-stack">
+            <span>PHP</span><span>MySQL</span><span>HTML</span><span>CSS</span>
+          </div>
+          <a class="proj-link" href="https://github.com/biswas1377/Bracu_Travel_partner_website" target="_blank">GitHub →</a>
+        </div>
+
+        <div class="proj-card" data-cat="graphics">
+          <div class="proj-meta">
+            <span class="proj-type">3D Graphics · Game</span>
+          </div>
+          <h3>Football Mania — Free Kick Simulator</h3>
+          <p>A 3D football free kick simulator with physics-based ball trajectory rendering in OpenGL.</p>
+          <div class="proj-stack">
+            <span>Python</span><span>OpenGL</span>
+          </div>
+          <a class="proj-link" href="https://github.com/samiulrifat/football_mania_3d" target="_blank">GitHub →</a>
+        </div>
+
+        <div class="proj-card" data-cat="graphics">
+          <div class="proj-meta">
+            <span class="proj-type">3D Graphics · Game</span>
+          </div>
+          <h3>Bullet Frenzy</h3>
+          <p>A 3D shooting game with real-time rendering, collision detection, and enemy mechanics.</p>
+          <div class="proj-stack">
+            <span>Python</span><span>OpenGL</span>
+          </div>
+          <a class="proj-link" href="https://github.com/biswas1377/Bullet-Frenzy" target="_blank">GitHub →</a>
+        </div>
+
+        <div class="proj-card" data-cat="graphics">
+          <div class="proj-meta">
+            <span class="proj-type">2D Game</span>
+          </div>
+          <h3>Diamond Catcher</h3>
+          <p>A 2D arcade-style catching game with dynamic object spawning and score tracking.</p>
+          <div class="proj-stack">
+            <span>Python</span><span>OpenGL</span>
+          </div>
+          <a class="proj-link" href="https://github.com/biswas1377/Diamond-Catcher" target="_blank">GitHub →</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section section-tinted" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag">Skills</span>
+        <h2>Tools & Technologies</h2>
+      </div>
+      <div class="skills-grid">
+
+        <div class="skill-group">
+          <h4 class="skill-group-title">Languages</h4>
+          <div class="skill-pills">
+            <span>Python</span><span>C/C++</span><span>MySQL</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h4 class="skill-group-title">AI / ML Frameworks</h4>
+          <div class="skill-pills">
+            <span>PyTorch</span><span>TensorFlow</span><span>Keras</span><span>Scikit-learn</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h4 class="skill-group-title">Web Development</h4>
+          <div class="skill-pills">
+            <span>React</span><span>Node.js</span><span>Express.js</span><span>MongoDB</span><span>PHP</span><span>Laravel</span><span>HTML</span><span>CSS</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h4 class="skill-group-title">Tools & Platforms</h4>
+          <div class="skill-pills">
+            <span>LaTeX</span><span>Linux</span><span>Adobe Illustrator</span><span>OpenGL</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- HONORS -->
+  <section class="section" id="honors">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag">Recognition</span>
+        <h2>Honors & Awards</h2>
+      </div>
+      <div class="honors-list">
+        <div class="honor-item">
+          <span class="honor-year">2024</span>
+          <div class="honor-info">
+            <h4>Bronze Award — Duke of Edinburgh's Award</h4>
+            <p>International recognition for challenge, skill, volunteering, and service.</p>
+          </div>
+        </div>
+        <div class="honor-divider"></div>
+        <div class="honor-item">
+          <span class="honor-year">2019</span>
+          <div class="honor-info">
+            <h4>Merit Scholarship — SSC (Dhaka Board)</h4>
+            <p>Academic excellence award for Secondary Certificate Examination results.</p>
+          </div>
+        </div>
+        <div class="honor-divider"></div>
+        <div class="honor-item">
+          <span class="honor-year">Mar 2025–<br/>May 2026</span>
+          <div class="honor-info">
+            <h4>Student Tutor — BRAC University</h4>
+            <p>Tutoring Mathematics and Natural Sciences, and CSE department students.</p>
+            <div class="video-embed">
+              <iframe src="https://www.youtube.com/embed/7xvSsSRedOM" title="Student Tutor Class Recording" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section section-dark" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag tag-light">Contact</span>
+        <h2>Let's talk.</h2>
+      </div>
+      <p class="contact-sub">Open to research collaborations, internships, and interesting conversations.</p>
+      <div class="contact-links">
+        <a href="mailto:biswasborno13@gmail.com" class="contact-item">
+          <span class="contact-icon">✉</span>
+          <div>
+            <span class="contact-label">Email</span>
+            <span class="contact-val">biswasborno13@gmail.com</span>
+          </div>
+        </a>
+        <a href="mailto:priyankan.biswas@g.bracu.ac.bd" class="contact-item">
+          <span class="contact-icon">🎓</span>
+          <div>
+            <span class="contact-label">University Email</span>
+            <span class="contact-val">priyankan.biswas@g.bracu.ac.bd</span>
+          </div>
+        </a>
+        <a href="https://github.com/biswas1377" target="_blank" class="contact-item">
+          <span class="contact-icon">⌥</span>
+          <div>
+            <span class="contact-label">GitHub</span>
+            <span class="contact-val">github.com/biswas1377</span>
+          </div>
+        </a>
+        <a href="tel:+8801648902681" class="contact-item">
+          <span class="contact-icon">📞</span>
+          <div>
+            <span class="contact-label">Phone</span>
+            <span class="contact-val">+(880) 1648902681</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <span>© 2025 Priyankan Biswas</span>
+    <span class="footer-mono">priyankan.biswas@g.bracu.ac.bd</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
